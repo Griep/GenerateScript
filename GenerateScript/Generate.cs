@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,11 +27,8 @@ namespace GenerateScript
 
             line = line.Replace("@\n", System.Environment.NewLine);
 
-            rollout = RolloutScript(Live);
-            rollback = RollbackScript(Live);
-
-            System.IO.StreamWriter fileRollout = new System.IO.StreamWriter("C:\\Users\\connor-griep\\Desktop\\TestFolder\\" + rollout);
-            System.IO.StreamWriter fileRollback = new System.IO.StreamWriter("C:\\Users\\connor-griep\\Desktop\\TestFolder\\" + rollback);
+            System.IO.StreamWriter fileRollout = new System.IO.StreamWriter("C:\\Users\\connor-griep\\Desktop\\TestFolder\\" + Live + ".rollout.sql");
+            System.IO.StreamWriter fileRollback = new System.IO.StreamWriter("C:\\Users\\connor-griep\\Desktop\\TestFolder\\" + Live + ".rollback.sql");
 
             fileRollout.WriteLine(line);
             fileRollback.WriteLine(line);
@@ -41,16 +38,6 @@ namespace GenerateScript
 
         }
 
-        public string RolloutScript(string Server)
-        {
-            Server = Server + ".rollout.sql";
-            return Server;
-        }
-        public string RollbackScript(string Server)
-        {
-            Server = Server + ".rollback.sql";
-            return Server;
-        }
 
     }
 }
