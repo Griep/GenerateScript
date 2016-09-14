@@ -1,0 +1,9 @@
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\bin\Debug\GenerateScript.exe.config
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\bin\Debug\GenerateScript.exe
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\bin\Debug\GenerateScript.pdb
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\obj\Debug\GenerateScript.csprojResolveAssemblyReference.cache
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\obj\Debug\GenerateScript.Form1.resources
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\obj\Debug\GenerateScript.Properties.Resources.resources
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\obj\Debug\GenerateScript.csproj.GenerateResource.Cache
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\obj\Debug\GenerateScript.exe
+\\sandhills.int\file\Users\connor-griep\Junior Year\GenerateScript\GenerateScript\obj\Debug\GenerateScript.pdb
