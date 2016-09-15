@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace GenerateScript
 {
@@ -10,6 +11,7 @@ namespace GenerateScript
     {
         public void GenerateMethod(string TO, string Dev, string Stg, string Live)
         {
+            
             string line = "--Rollout for TO #" + TO + " \n"
                         + "--Run this script on '" + Dev + "', '" + Stg + "', '" + Live + "' \n\n"
                         + "IF @@SERVERNAME NOT IN('" + Dev + "', '" + Stg + "', '" + Live + "') \n"
@@ -25,14 +27,21 @@ namespace GenerateScript
 
             line = line.Replace("@\n", System.Environment.NewLine);
 
-            System.IO.StreamWriter fileRollout = new System.IO.StreamWriter("C:\\Users\\connor-griep\\Desktop\\TestFolder\\" + Live + ".rollout.sql");
-            System.IO.StreamWriter fileRollback = new System.IO.StreamWriter("C:\\Users\\connor-griep\\Desktop\\TestFolder\\" + Live + ".rollback.sql");
+            
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            Directory.CreateDirectory(path + "\\ScriptFolder");
+
+            StreamWriter fileRollout = new StreamWriter(path + "\\ScriptFolder\\" + Live + ".rollout.sql");
+            StreamWriter fileRollback = new StreamWriter(path + "\\ScriptFolder\\" + Live + ".rollback.sql");
 
             fileRollout.WriteLine(line);
             fileRollback.WriteLine(line);
 
             fileRollout.Close();
             fileRollback.Close();
+
         }
+
+
     }
 }
