@@ -10,7 +10,6 @@ namespace GenerateScript
     {
         public void GenerateMethod(string TO, string Dev, string Stg, string Live)
         {
-            //Jim was here.
             string line = "--Rollout for TO #" + TO + " \n"
                         + "--Run this script on '" + Dev + "', '" + Stg + "', '" + Live + "' \n\n"
                         + "IF @@SERVERNAME NOT IN('" + Dev + "', '" + Stg + "', '" + Live + "') \n"
@@ -34,9 +33,6 @@ namespace GenerateScript
 
             fileRollout.Close();
             fileRollback.Close();
-
         }
-
-
     }
 }
