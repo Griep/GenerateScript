@@ -21,7 +21,7 @@ namespace GenerateScript
         private string TOnumber;
         private string Dev;
         private string Stg;
-        private string Live;
+        private string Livee;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -30,16 +30,16 @@ namespace GenerateScript
             TOnumber = textboxTO.Text;
             Dev = textBoxDEV.Text;
             Stg = textBoxSTG.Text;
-            Live = textBoxLIVE.Text;
+            Livee = textBoxLIVE.Text;
 
-            Generate.GenerateMethod(TOnumber, Dev, Stg, Live);
+            Generate.GenerateMethod(TOnumber, Dev, Stg, Livee);
 
         }
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //Whats with the empty methods
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
